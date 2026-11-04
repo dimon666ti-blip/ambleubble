@@ -1,0 +1,33 @@
+{
+  "name": "I CAN — поверни контроль над своїм життям",
+  "short_name": "I CAN",
+  "description": "Маленькі дії. Великі зміни. Опиши складну ситуацію та отримай три прості кроки, які можна зробити вже сьогодні.",
+  "lang": "uk",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F9FAFB",
+  "theme_color": "#A7F3D0",
+  "categories": ["health", "lifestyle", "productivity"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
