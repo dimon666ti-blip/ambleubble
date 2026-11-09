@@ -1,4 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
+import FallingLeaves from '@/components/FallingLeaves';
+import ProblemSection from '@/components/ProblemSection';
 import Header from '@/components/Header';
 import SettingsModal from '@/components/SettingsModal';
 import SituationForm from '@/components/SituationForm';
@@ -303,6 +305,10 @@ export default function App() {
         <div className="absolute -right-16 top-1/3 h-80 w-80 rounded-full bg-calm-lavender-200/50 blur-3xl animate-float" />
         <div className="absolute bottom-0 left-1/3 h-72 w-72 rounded-full bg-calm-mint-200/50 blur-3xl animate-float" />
       </div>
+
+      <FallingLeaves count={30} />
+
+      <ProblemSection projectUrl="https://github.com/ambleubble" />
 
       <Header onOpenSettings={() => setIsSettingsOpen(true)} />
 

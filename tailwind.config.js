@@ -56,6 +56,15 @@ export default {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-8px)' },
         },
+
+        'fall-sway': {
+          '0%': { transform: 'translateY(-10px) translateX(0) rotate(0deg)', opacity: '0' },
+          '10%': { opacity: 'var(--leaf-opacity, 0.6)' },
+          '25%': { transform: 'translateY(25vh) translateX(12px) rotate(15deg)' },
+          '50%': { transform: 'translateY(50vh) translateX(-15px) rotate(-15deg)' },
+          '75%': { transform: 'translateY(75vh) translateX(10px) rotate(10deg)' },
+          '100%': { transform: 'translateY(110vh) translateX(0) rotate(360deg)', opacity: '0' },
+        },
       },
       animation: {
         'fade-in': 'fade-in 0.3s ease-out both',
@@ -63,6 +72,7 @@ export default {
         'pop-in': 'pop-in 0.35s ease-out both',
         sway: 'sway 4s ease-in-out infinite',
         float: 'float 6s ease-in-out infinite',
+        'fall-sway': 'fall-sway var(--fall-duration, 14s) linear infinite',
       },
     },
   },
